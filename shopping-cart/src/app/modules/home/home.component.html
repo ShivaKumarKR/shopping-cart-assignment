@@ -1,0 +1,21 @@
+<section>
+  <ngb-carousel #ngCarousel class="carousel" *ngIf="banners" [interval]="2000" [keyboard]="true">
+    <ng-template ngbSlide *ngFor="let banner of banners">
+      <div class="wrapper">
+        <img [src]="banner.bannerImageUrl" [alt]="banner.bannerImageAlt" />
+      </div>
+    </ng-template>
+  </ngb-carousel>
+  <div class="categories" *ngFor="let category of categories ; let i = index">
+    <section class="row align-items-center py-4" [ngClass]="{'flex-row-reverse': i%2 !== 0}" *ngIf="category">
+      <div class="col-4 col-md-4">
+        <img [src]="category.imageUrl" [alt]="category.name" class="img-fluid">
+      </div>
+      <div class="col-8 col-md-8 d-flex flex-column align-items-center details-wrapper">
+        <h3 class="text-center">{{ category.name }}</h3>
+        <p class="text-center">{{ category.description }}</p>
+        <custom-button [content]="'Explore ' + category.key" (click)="redirectToProducts(category.id)"></custom-button>
+      </div>
+    </section>
+  </div>
+</section>
