@@ -46,7 +46,7 @@ a:hover {
 }
 
 .error {
-  color: red;
+  color: $error;
 }
 
 .input-box {
@@ -57,14 +57,14 @@ a:hover {
       width: 100%;
       outline: none;
       border: none;
-      border-bottom: 1px solid #777;
+      border-bottom: 1px solid $border;
       box-shadow: none;
       padding-bottom: 8px;
       font-size: 1.4rem;
       font-weight: 400;
   
       &:focus {
-        border-color: #6ddae3;
+        border-color: $border-focus;
         border-width: medium medium 2px;
       }
   
@@ -74,7 +74,7 @@ a:hover {
         left: 0;
         font-size: 1.4rem;
         opacity: 1;
-        color: #6ddae3;
+        color: $border-focus;
       }
     }
   
@@ -85,5 +85,6 @@ a:hover {
       left: 0;
       transition: 0.2s ease all;
       font-size: 1.4rem;
+      background-color: $white;
     }
   }

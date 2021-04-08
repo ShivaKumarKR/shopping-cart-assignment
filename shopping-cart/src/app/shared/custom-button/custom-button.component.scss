@@ -1,7 +1,9 @@
+@import 'src/variable.scss';
+
 button {
     border: 0;
-    background-color: #b13047;
-    color: white;
+    background-color: $red;
+    color: $white;
     padding: 0.5rem 1rem;
   
     &:disabled {

@@ -1,5 +1,5 @@
   
-@import '../../../variable.scss';
+@import 'src/variable.scss';
 
 .cart {
   position: fixed;
@@ -8,13 +8,13 @@
   width: 100%;
 
   .cart-wrapper {
-    background-color: #cecece;
+    background-color: $grey;
     position: relative;
     z-index: 1;
     height: calc(100vh - 81px);
 
     .cart-header {
-      background-color: #fff;
+      background-color: $white;
       margin-top: 1rem;
       margin-bottom: 1rem;
 
@@ -34,19 +34,19 @@
     }
 
     .cart-total {
-      background-color: #fff;
+      background-color: $white;
 
       .checkout {
         border: 0;
-        background-color: #b13047;
-        color: #fff;
+        background-color: $red;
+        color: $white;
         border-radius: 5px;
       }
     }
   }
 
   .empty-cart {
-    background-color: #fff;
+    background-color: $white;
     position: fixed;
     top: 0;
     left: 0;
@@ -54,8 +54,8 @@
 
     .cart-header {
       margin: 0;
-      background-color: #000;
-      color: #fff;
+      background-color: $black;
+      color: $white;
 
       .close {
         display: block;
@@ -73,32 +73,33 @@
       z-index: 0;
       height: 100vh;
       width: 100vw;
-      background-color: rgba(0, 0, 0, 0.5);
+      background-color: $cart-background;
     }
 
     .cart-wrapper {
-      background-color: #cecece;;
+      background-color: $grey;
       position: relative;
       z-index: 1;
       height: calc(100vh - 81px);
 
       .cart-header {
-        background-color: black;
-        color: white;
+        background-color: $black;
+        color: $white;
 
         .close {
           display: block;
+          color: $white;
         }
       }
     }
 
     .empty-cart {
-      background-color: #fff;
+      background-color: $white;
     }
   }
 }
 .cart-item {
-    background-color: white;
+    background-color: $white;
   
     img {
       height: 80px;
@@ -115,9 +116,9 @@
       .quantity-buttons {
         button {
           border-radius: 50%;
-          background-color: #b13047;
+          background-color: $red;
           border: 0;
-          color: white;
+          color: $white;
           margin: 0;
           padding: 0;
           width: 20px;

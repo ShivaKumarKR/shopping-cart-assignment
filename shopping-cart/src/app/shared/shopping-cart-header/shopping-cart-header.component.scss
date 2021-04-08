@@ -1,8 +1,8 @@
 @import 'src/variable.scss';
 
 header {
-  background-color: #fff;
-  box-shadow: 0 2px 2px #d0d0d0;
+  background-color: $white;
+  box-shadow: 0 2px 2px $header-shadow;
   position: relative;
   z-index: 100;
 
@@ -22,21 +22,21 @@ header {
   .login, .register {
     font-size: 1.2rem;
     margin-right: 0.5rem;
-    color: #000;
+    color: $black;
   }
 
   a {
-    color: #000;
+    color: $black;
     transition: color 0.1s;
   }
 
   a:hover {
-    color: #383838;
+    color: $header-hover;
     text-decoration: none;
   }
 
   .cart {
-    background-color: #e8e8e8;
+    background-color: $header-cart;
     padding: 0.75rem 1rem;
 
     img {
